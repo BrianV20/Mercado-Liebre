@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --grey: #ccc;
+    --darker-grey: #ececec;
+    --dark-grey: #333;
+}
+
+main {
+    background-color: #fff;
+}
+
+#registerForm {
+    /* display: flex; */
+    width: clamp(300px, 80%, 500px);
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    background-color: var(--darker-grey);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#perfilRadios {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: flex;
+}
+
+#perfilRadios input {
+    margin-right: 1.5rem;
+    margin-left: -0.5rem;
+}
+
+#categorias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.categoria {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: min-content;
+}
+
+.categoria label {
+    margin-left: 0.8rem;
+}
+
+#userpic {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#registerForm input {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+.rdio {
+    background-color: aqua;
+    border: 5px solid green;
+    display: inline-block;
+    width: 10%;
+}
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.registerFormButtons {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: calc(0.6rem + 0.5vw);
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #0022AA;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+button:hover {
+    color: #e8e8e8;
+}
+
+button:hover::before {
+    width: 100%;
+}
+
+
+/* RESPONSIVENESS */
+/*DESKTOP*/
+@media (min-width: 769px) {
+    .caracteristicasDelFooter {
+        display: flex;
+        align-items: center;
+    }
+}
