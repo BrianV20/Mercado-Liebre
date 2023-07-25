@@ -150,12 +150,6 @@ main section article i{
     transition: linear transform 0.3s;
 }
 
-.camioncito i:hover {
-    transform: rotate(-90deg);
-    background-color: var(--verde);
-    color: #fff;
-}
-
 .producto p {
     margin-left: 1rem;
 }
@@ -403,10 +397,15 @@ footer i {
         column-gap: 2rem;
         justify-content: space-around;
     }
-
     
     .producto:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .camioncito i:hover {
+        transform: rotate(-90deg);
+        background-color: var(--verde);
+        color: #fff;
     }
 
     .caracteristicasDelFooter {
