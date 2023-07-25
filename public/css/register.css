@@ -16,7 +16,6 @@ main {
 }
 
 #registerForm {
-    /* display: flex; */
     width: clamp(300px, 80%, 500px);
     margin: 2rem auto;
     padding: 1rem;
@@ -86,13 +85,6 @@ label {
     border-radius: 5px;
 }
 
-.rdio {
-    background-color: aqua;
-    border: 5px solid green;
-    display: inline-block;
-    width: 10%;
-}
-
 .buttons {
     display: flex;
     width: 100%;
@@ -116,7 +108,7 @@ label {
     overflow: hidden;
 }
 
-button::before {
+.registerFormButtons::before {
     content: "";
     position: absolute;
     top: 0;
@@ -131,12 +123,16 @@ button::before {
     transition: all 250ms
 }
 
-button:hover {
+.registerFormButtons:hover {
     color: #e8e8e8;
 }
 
-button:hover::before {
+.registerFormButtons:hover::before {
     width: 100%;
+}
+
+.caracteristicasDelFooter {
+    margin: 2rem 1rem;
 }
 
 
@@ -146,5 +142,6 @@ button:hover::before {
     .caracteristicasDelFooter {
         display: flex;
         align-items: center;
+        margin: 4rem 2rem 1rem 2rem;
     }
 }

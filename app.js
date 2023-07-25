@@ -6,15 +6,12 @@ const path = require('path');
 const app = express();
 const puerto = 3001;
 
-//const publicPath = path.resolve(__dirname, './public');
-//app.use(express.static(publicPath));
-
 app.use(express.json());
 app.use('/', express.static(__dirname + '/public'));
 
 // --------------------- LISTEN ---------------------
 app.listen(puerto, () => {
-    console.log('Aplicación esuchando en puerto 3001');
+    console.log('Aplicación escuchando en puerto 3001');
 });
 
 
@@ -34,9 +31,10 @@ app.get('/views/login.html', (req, res) => {
 
 // --------------------- POSTS ---------------------
 app.post('/views/register.html', (req, res) => {
-    res.send('post de register');
+    // res.send('post de register');
 });
 
 app.post('/views/login.html', (req,res) => {
-    res.send("post de login"); 
+    // res.send("post de login");
+    // res.redirect('/');
 });

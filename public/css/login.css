@@ -31,7 +31,6 @@ label {
     width: 100%;
     margin-bottom: 1rem;
     padding: 0.5rem;
-    /* border: 2px solid var(--grey); */
     border: 0;
     border-radius: 5px;
 }
@@ -42,7 +41,7 @@ label {
     align-items: center;
 }
 
-.buttons button {
+#submitBtn {
     padding: 15px 25px;
     border: unset;
     border-radius: 15px;
@@ -58,7 +57,7 @@ label {
     overflow: hidden;
 }
 
-button::before {
+#submitBtn::before {
     content: "";
     position: absolute;
     top: 0;
@@ -73,11 +72,11 @@ button::before {
     transition: all 250ms
 }
 
-button:hover {
+#submitBtn:hover {
     color: #e8e8e8;
 }
 
-button:hover::before {
+#submitBtn:hover::before {
     width: 100%;
 }
 
@@ -92,5 +91,6 @@ button:hover::before {
     .caracteristicasDelFooter {
         display: flex;
         align-items: center;
+        margin: 4rem 2rem 1rem 2rem;
     }
 }

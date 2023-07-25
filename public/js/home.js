@@ -1,7 +1,5 @@
-const productoEl = document.getElementsByClassName('producto')
-const descripcionEl = document.querySelector('descripcion')
+const burgerMenuBtn = document.querySelector('#burgerMenuBtn');
 
-productoEl[0].addEventListener('hover', () => {
-    descripcionEl.style.display = 'none';
-    descripcionEl.style.backgroundColor = 'red';
+burgerMenuBtn.addEventListener('click', () => {
+    document.querySelector('#navLinksUl').classList.toggle('navLinksUlStyle');
 });

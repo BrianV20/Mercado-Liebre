@@ -5,6 +5,7 @@ const directionEl = document.querySelector('#direction');
 const passwordEl = document.querySelector('#password');
 const passwordConfirmEl = document.querySelector('#passwordConfirm');
 const submitBtn = document.querySelector('#submitBtn');
+const burgerMenuBtn = document.querySelector('#burgerMenuBtn');
 
 function validateRegister() {
     if(nameEl.value.length < 5) {
@@ -55,4 +56,8 @@ function isValid() {
 
 submitBtn.addEventListener('click', () => {
     isValid();
+});
+
+burgerMenuBtn.addEventListener('click', () => {
+    document.querySelector('#navLinksUl').classList.toggle('navLinksUlStyle');
 });
