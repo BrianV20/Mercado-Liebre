@@ -4,7 +4,7 @@ const path = require('path');
 
 
 const app = express();
-const puerto = 3001;
+const puerto = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use('/', express.static(__dirname + '/public'));
