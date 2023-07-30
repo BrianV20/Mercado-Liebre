@@ -352,11 +352,17 @@ footer i {
 @media (min-width: 769px) {
     .producto {
         width: 20vw;
+        min-height: 35rem;
     }
 
     .descripcion {
         display: none;
         padding-bottom: 1rem;
+    }
+
+    .producto:hover {
+        transform: scale(1.03);
+        transition: all ease-in-out 0.3s;
     }
 
     .producto:hover .descripcion {
@@ -406,6 +412,7 @@ footer i {
         transform: rotate(-90deg);
         background-color: var(--verde);
         color: #fff;
+        transition: all ease-in-out 0.3s;
     }
 
     .caracteristicasDelFooter {
